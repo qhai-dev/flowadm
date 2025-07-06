@@ -10,6 +10,7 @@ WORKDIR /app
 
 # Install dependencies based on the preferred package manager
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* .npmrc* ./
+RUN yarn config set registry https://registry.npmmirror.com
 RUN yarn --frozen-lockfile; 
 
 
