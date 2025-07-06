@@ -1,13 +1,13 @@
 "use client";
 
 import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
-import { FC, PropsWithChildren, ReactNode } from "react";
+import { FC, PropsWithChildren } from "react";
 import {
   SidebarProvider,
-  SidebarTrigger,
+  // SidebarTrigger,
   Sidebar,
   SidebarContent,
-  SidebarFooter,
+  // SidebarFooter,
   SidebarGroup,
   // SidebarHeader,
   SidebarGroupLabel,
