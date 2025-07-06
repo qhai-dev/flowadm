@@ -8,9 +8,6 @@
   --foreground: #fcfcfd;
   --border: #ffffff;
 
-
-
-
   --radius: 0.625rem;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -42,12 +39,10 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-
 [data-theme="dark"] {
   --background: #1d1d20;
   --foreground: #222225;
   --border: #c8ceda14;
-
 
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -80,12 +75,9 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
-
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -123,12 +115,12 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
+  html,
   body {
     @apply bg-background text-foreground;
   }
